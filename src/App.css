@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+@import url("https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
+
+body {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+}
+h3,
+h2,
+h1 {
+  font-weight: 600;
+}
+.padding {
+  padding: 0px 24px 0px 0px;
+}
+.arrow {
+  cursor: url(./svg/fa-regular_hand-pointer.svg), auto;
+  height: 32px;
+  width: 32px;
+  background-clip: content-box;
+  display: inline;
+  position: absolute;
+  top: 249px;
+  padding: 20px;
+  left: -10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.next-arrow {
+  position: absolute;
+  top: 249px;
+  padding: 20px;
+  right: 20px;
+  cursor: url(./svg/fa-regular_hand-pointer.svg), auto;
+  height: 32px;
+  width: 32px;
+  background-clip: content-box;
+  display: inline;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  display: block;
+  background: url(./svg/date.svg) no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
+  appearance: none;
 }
